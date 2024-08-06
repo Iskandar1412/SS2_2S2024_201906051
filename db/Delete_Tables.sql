@@ -1,12 +1,28 @@
 USE PRACTICA1;
-DROP TABLE IF EXISTS Temporal;
-DROP TABLE IF EXISTS Passenger;
-DROP TABLE IF EXISTS Airport;
-DROP TABLE IF EXISTS Flight;
-DROP TABLE IF EXISTS Pilot;
-DROP TABLE IF EXISTS Nationality;
-DROP TABLE IF EXISTS Continent;
-DROP TABLE IF EXISTS Timeline;
+
+-- Tabla Flight_Details
 DROP TABLE IF EXISTS Flight_Details;
 
--- DROP DATABASE PRUEBA;
+-- Tabla Temporal
+DROP TABLE IF EXISTS Temporal;
+
+-- Tabla Passenger
+DROP TABLE IF EXISTS Passenger;
+
+-- Tabla Airport
+DROP TABLE IF EXISTS Airport;
+
+-- Tabla Flight
+DROP TABLE IF EXISTS Flight;
+
+-- Tabla Pilot
+DROP TABLE IF EXISTS Pilot;
+
+-- Tabla Nationality
+DROP TABLE IF EXISTS Nationality;
+
+-- Tabla Continent
+DROP TABLE IF EXISTS Continent;
+
+-- Tabla Timeline
+DROP TABLE IF EXISTS Timeline;

@@ -1,13 +1,12 @@
 USE PRACTICA1;
 
 BULK INSERT Temporal
-FROM ''
+FROM 'C:/Users/Pacos/Desktop/Proyectos/SS2_2S2024_201906051/Pruebas/DataSet.csv'
 WITH
 (
     FIRSTROW = 2,
-    FIELDTERMINATOR = ';',
+    FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
-    CODEPAGE = 'UTF-8',
-    DATAFILETYPE = 'Char',
+    DATAFILETYPE = 'char',
     TABLOCK
 );

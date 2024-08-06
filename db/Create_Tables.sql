@@ -1,20 +1,20 @@
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'PRACTICA1')
-BEGIN
-    CREATE DATABASE PRACTICA1;
-END
+-- IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'PRACTICA1')
+-- BEGIN
+--     CREATE DATABASE PRACTICA1;
+-- END
 USE PRACTICA1;
 
 -- Tabla Temporal
 CREATE TABLE Temporal (
-    PassengerID VARCHAR(50),
-    FirstName VARCHAR(100),
-    LastName VARCHAR(100),
+    PassengerID VARCHAR(10),
+    FirstName VARCHAR(30),
+    LastName VARCHAR(30),
     Gender VARCHAR(10),
     Age INT,
-    Nationality VARCHAR(100),
-    AirportName VARCHAR(100),
+    Nationality VARCHAR(50),
+    AirportName VARCHAR(50),
     AirportCountryCode VARCHAR(10),
-    CountryName VARCHAR(100),
+    CountryName VARCHAR(50),
     AirportContinent VARCHAR(50),
     ContinentName VARCHAR(50),
     DepartureDate DATE,
@@ -25,9 +25,9 @@ CREATE TABLE Temporal (
 
 -- Pasajeros
 CREATE TABLE Passenger (
-    PassengerID VARCHAR(50) PRIMARY KEY,
-    FirstName VARCHAR(100),
-    LastName VARCHAR(100),
+    PassengerID VARCHAR(10) PRIMARY KEY,
+    FirstName VARCHAR(30),
+    LastName VARCHAR(30),
     Gender VARCHAR(10),
     Age INT
 );
@@ -35,9 +35,9 @@ CREATE TABLE Passenger (
 -- Aeropuerto
 CREATE TABLE Airport (
     AirportID INT IDENTITY(1,1) PRIMARY KEY,
-    AirportName VARCHAR(100),
+    AirportName VARCHAR(50),
     AirportCountryCode VARCHAR(10),
-    CountryName VARCHAR(100),
+    CountryName VARCHAR(50),
     AirportContinent VARCHAR(50)
 );
 
@@ -58,13 +58,13 @@ CREATE TABLE Pilot (
 -- Nacionalidad
 CREATE TABLE Nationality (
     NationalityID INT IDENTITY(1,1) PRIMARY KEY,
-    Nationality VARCHAR(100)
+    Nationality VARCHAR(50)
 );
 
 -- Continente
 CREATE TABLE Continent (
     ContinentID INT IDENTITY(1,1) PRIMARY KEY,
-    ContinentName VARCHAR(100)
+    ContinentName VARCHAR(50)
 );
 
 -- Salida
@@ -76,7 +76,7 @@ CREATE TABLE Timeline (
 -- Detalles de Vuelo
 CREATE TABLE Flight_Details (
     FlightDetailsID INT IDENTITY(1,1) PRIMARY KEY,
-    PassengerID VARCHAR(50),
+    PassengerID VARCHAR(10),
     AirportID INT,
     FlightID INT,
     PilotID INT,
