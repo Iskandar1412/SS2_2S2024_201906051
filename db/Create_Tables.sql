@@ -1,3 +1,9 @@
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'PRACTICA1')
+BEGIN
+    CREATE DATABASE PRACTICA1;
+END
+USE PRACTICA1;
+
 -- Tabla Temporal
 CREATE TABLE Temporal (
     PassengerID VARCHAR(50),
