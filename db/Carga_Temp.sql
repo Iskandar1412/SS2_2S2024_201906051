@@ -1,11 +1,12 @@
 USE PRACTICA1;
 
 BULK INSERT FlightTemp
-FROM 'C:\CSV\mod.csv'
+FROM 'C:\CSV\DataSet.csv'
 WITH
 (
     FIRSTROW = 2,
-    FIELDTERMINATOR = '|',
+    FORMAT = 'CSV',
+    FIELDTERMINATOR = ',',
     ROWTERMINATOR = '0x0a', -- \n
     CODEPAGE = 'UFT-8',
     DATAFILETYPE = 'char',

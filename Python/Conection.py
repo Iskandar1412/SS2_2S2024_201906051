@@ -69,21 +69,21 @@ class ConexionDB:
             print("Error: No se pudo extraer la informacion {}".format(error))
             conn.rollback()
 
-    def replace_commas(self, line):
-        line = re.sub(r',(?=(?:[^"]*"[^"]*")*[^"]*$)', '|', line)
-        # line = re.sub(r',', '.', line)
-        line = re.sub(r'\"', '', line)
-        # line = re.sub(r'\|', ',', line)
-        line = re.sub(r'\n+', '', line)
-        return line + '\n'
+    # def replace_commas(self, line):
+    #     line = re.sub(r',(?=(?:[^"]*"[^"]*")*[^"]*$)', '|', line)
+    #     # line = re.sub(r',', '.', line)
+    #     line = re.sub(r'\"', '', line)
+    #     # line = re.sub(r'\|', ',', line)
+    #     line = re.sub(r'\n+', '', line)
+    #     return line + '\n'
 
-    def process_csv(self, input_file, output_file):
-        with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', newline='', encoding='utf-8') as outfile:
+    # def process_csv(self, input_file, output_file):
+    #     with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', newline='', encoding='utf-8') as outfile:
 
-            for line in infile:
-                modified_line = self.replace_commas(line)
-                outfile.write(modified_line)
-        time.sleep(2)
+    #         for line in infile:
+    #             modified_line = self.replace_commas(line)
+    #             outfile.write(modified_line)
+    #     time.sleep(2)
 
     def CargarInformacion(self):
         
