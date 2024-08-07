@@ -29,3 +29,7 @@ docker exec -it db-prueba /bin/bash
 > Conectar con DBeaver
 
 ![alt text](./images/Connect_DBeaver.png)
+
+## Caso de instalar SQL Server en Ordenador
+
+![alt text](./images/ExpressSQLServer.png)

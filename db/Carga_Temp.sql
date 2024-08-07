@@ -1,13 +1,14 @@
 USE PRACTICA1;
 
-BULK INSERT Temporal
-FROM ''
+BULK INSERT FlightTemp
+FROM 'C:\CSV\DataSet.csv'
 WITH
 (
     FIRSTROW = 2,
-    FIELDTERMINATOR = ';',
-    ROWTERMINATOR = '\n',
-    CODEPAGE = 'UTF-8',
-    DATAFILETYPE = 'Char',
+    FORMAT = 'CSV',
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0a', -- \n
+    CODEPAGE = 'UFT-8',
+    DATAFILETYPE = 'char',
     TABLOCK
 );
