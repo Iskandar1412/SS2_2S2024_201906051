@@ -4,6 +4,7 @@ import subprocess
 import os
 import re
 import time
+import shutil
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -52,16 +53,18 @@ finally:
 class ConexionDB:
 
     def ExtraerInformacion(self, ruta_archivo):
+        destin = r'C:\CSV\DataSet.csv'
+        if os.path.exists(ruta_archivo):
+            shutil.copy2(ruta_archivo, destin)
+
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
             # with open('C:\\Scripts\\Carga.sql', 'r+') as sql_file:
-            with open('../db/Carga_Temp.sql', 'r+') as sql_file:
-                sql_query = sql_file.read()
-                sql_query = sql_query.replace('ruta_entrante', ruta_archivo)
-                print(sql_query)
+            # if os.path.exists(destin):
+            #     print('Archivo Existente')
 
-            cursor.execute(sql_query)
+            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', '../db/Carga_Temp.sql'])
             conn.commit()
             print("Información extraida exitosamente")
             conn.close()
@@ -90,8 +93,8 @@ class ConexionDB:
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
-            # with open('C:\\Scripts\\Carga.sql', 'r+') as sql_file:
-            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', '../db/Carga_Temp.sql'])
+            #Se pondra la carga a las tablas con contenido corregido
+            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', '../db/Carga.sql'])
             conn.commit()
             print("Información cargada exitosamente")
             conn.close()
@@ -169,3 +172,6 @@ class ConexionDB:
         except pyodbc.Error as error:
             print("Error: No se pudo crear el modelo. {}".format(error))
             conn.rollback()
+
+    def GenerarConceptos(self):
+        print("Generar conceptos")

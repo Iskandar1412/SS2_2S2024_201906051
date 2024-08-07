@@ -18,7 +18,7 @@ while seleccion != 6:
     elif seleccion == "2":
         conn.CrearModelo()
     elif seleccion == "3":
-        ruta = input("Ingrese la ruta del archivo: ")
+        ruta = input("Ingrese la ruta del archivo > ")
         conn.ExtraerInformacion(ruta)
     elif seleccion == "4":
         # input_csv = 'C:\\CSV\\DataSet.csv'

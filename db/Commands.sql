@@ -10,6 +10,49 @@ WHERE CountryName = 'Venezuela, Bolivarian Republic of';
 
 SELECT *
 FROM FlightTemp
+WHERE AirportName = 'Cheongju International Airport/Cheongju Air Base (K-59/G-513)'; 
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '+%-%';
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '%[-]%';
+
+SELECT COUNT(*)
+FROM FlightTemp
+WHERE AirportName LIKE '%[@\-ç¦+©ªø®]%';
+
+SELECT *
+FROM FlightTemp
+WHERE Nationality  LIKE '%,%';
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '%,%';
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '%/%';
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '%(%/%)';
+
+SELECT *
+FROM FlightTemp
+WHERE AirportName LIKE '+%-%,%';
+
+SELECT *
+FROM FlightTemp
+WHERE ArrivalAirport = '0'
+   OR ArrivalAirport LIKE '%,%'
+   OR ArrivalAirport LIKE '%,'
+   OR ArrivalAirport LIKE ',%';
+  
+SELECT COUNT(*)
+FROM FlightTemp
 WHERE ArrivalAirport = '0'
    OR ArrivalAirport LIKE '%,%'
    OR ArrivalAirport LIKE '%,'
