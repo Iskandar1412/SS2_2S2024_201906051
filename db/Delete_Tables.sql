@@ -1,10 +1,10 @@
 USE PRACTICA1;
 
 -- Tabla Flight_Details
-DROP TABLE IF EXISTS Flight_Details;
+DROP TABLE IF EXISTS FlightDetails;
 
 -- Tabla Temporal
-DROP TABLE IF EXISTS Temporal;
+DROP TABLE IF EXISTS FlightTemp;
 
 -- Tabla Passenger
 DROP TABLE IF EXISTS Passenger;
