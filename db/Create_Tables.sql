@@ -6,13 +6,13 @@ USE PRACTICA1;
 
 -- Tabla Temporal
 CREATE TABLE FlightTemp (
-    PassengerID VARCHAR(15),
+    PassengerID VARCHAR(15) COLLATE Latin1_General_BIN,
     FirstName VARCHAR(75),
     LastName VARCHAR(75),
     Gender VARCHAR(20),
     Age INT,
     Nationality VARCHAR(150),
-    AirportName VARCHAR(150),
+    AirportName VARCHAR(150) COLLATE Latin1_General_BIN,
     AirportCountryCode VARCHAR(150),
     CountryName VARCHAR(150),
     AirportContinent VARCHAR(150),
@@ -25,7 +25,7 @@ CREATE TABLE FlightTemp (
 
 -- Pasajeros
 CREATE TABLE Passenger (
-    PassengerID VARCHAR(15) PRIMARY KEY,
+    PassengerID VARCHAR(15) COLLATE Latin1_General_BIN PRIMARY KEY,
     FirstName VARCHAR(75),
     LastName VARCHAR(75),
     Gender VARCHAR(20),
@@ -35,7 +35,7 @@ CREATE TABLE Passenger (
 -- Aeropuerto
 CREATE TABLE Airport (
     AirportID INT IDENTITY(1,1) PRIMARY KEY,
-    AirportName VARCHAR(150),
+    AirportName VARCHAR(150) COLLATE Latin1_General_BIN,
     AirportCountryCode VARCHAR(150),
     CountryName VARCHAR(150),
     AirportContinent VARCHAR(150)
@@ -44,7 +44,6 @@ CREATE TABLE Airport (
 -- Vuelo
 CREATE TABLE Flight (
     FlightID INT IDENTITY(1,1) PRIMARY KEY,
-    DepartureDate DATE,
     ArrivalAirport VARCHAR(150),
     FlightStatus VARCHAR(75)
 );
@@ -52,42 +51,35 @@ CREATE TABLE Flight (
 -- Piloto
 CREATE TABLE Pilot (
     PilotID INT IDENTITY(1,1) PRIMARY KEY,
-    PilotName VARCHAR(150)
+    PilotName VARCHAR(150) UNIQUE
 );
 
 -- Nacionalidad
 CREATE TABLE Nationality (
     NationalityID INT IDENTITY(1,1) PRIMARY KEY,
-    Nationality VARCHAR(150)
+    Nationality VARCHAR(150) UNIQUE
 );
 
 -- Continente
 CREATE TABLE Continent (
     ContinentID INT IDENTITY(1,1) PRIMARY KEY,
-    ContinentName VARCHAR(150)
-);
-
--- Salida
-CREATE TABLE Timeline (
-    TimelineID INT IDENTITY(1,1) PRIMARY KEY,
-    DepartureDate DATE
+    ContinentName VARCHAR(150) UNIQUE
 );
 
 -- Detalles de Vuelo
 CREATE TABLE FlightDetails (
     FlightDetailsID INT IDENTITY(1,1) PRIMARY KEY,
-    PassengerID VARCHAR(15),
+    PassengerID VARCHAR(15) COLLATE Latin1_General_BIN,
     AirportID INT,
     FlightID INT,
     PilotID INT,
     NationalityID INT,
     ContinentID INT,
-    TimelineID INT,
+    DepartureDate DATE
     FOREIGN KEY (PassengerID) REFERENCES Passenger(PassengerID),
     FOREIGN KEY (AirportID) REFERENCES Airport(AirportID),
     FOREIGN KEY (FlightID) REFERENCES Flight(FlightID),
     FOREIGN KEY (PilotID) REFERENCES Pilot(PilotID),
     FOREIGN KEY (NationalityID) REFERENCES Nationality(NationalityID),
     FOREIGN KEY (ContinentID) REFERENCES Continent(ContinentID),
-    FOREIGN KEY (TimelineID) REFERENCES Timeline(TimelineID)
 );

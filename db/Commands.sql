@@ -30,6 +30,12 @@ WHERE Nationality  LIKE '%,%';
 
 SELECT *
 FROM FlightTemp
+WHERE Nationality LIKE '%,%'
+  OR CountryName LIKE '%,%';
+
+
+SELECT *
+FROM FlightTemp
 WHERE AirportName LIKE '%,%';
 
 SELECT *
