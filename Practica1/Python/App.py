@@ -12,7 +12,7 @@ while seleccion != 6:
         3. Extraer Informacion      4. Cargar Informacion
         5. Realizar Consultas       6. Salida
             """)
-    seleccion = input("Iska@Iskandar $ > ")
+    seleccion = input("Iskandar@Iska $ > ")
     if seleccion == "1":
         conn.BorrarModelo()
     elif seleccion == "2":
