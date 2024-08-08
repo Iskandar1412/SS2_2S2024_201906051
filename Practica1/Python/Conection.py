@@ -6,6 +6,8 @@ import re
 import time
 import shutil
 
+# C:\Users\Pacos\Desktop\Proyectos\SS2_2S2024_201906051\Practica1\Pruebas\DataSet.csv
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -54,18 +56,17 @@ class ConexionDB:
 
     def ExtraerInformacion(self, ruta_archivo):
         destin = r'C:\CSV\DataSet.csv'
+        TempCarga = '../db/SQL/Carga_Temp.sql'
         if os.path.exists(ruta_archivo):
             shutil.copy2(ruta_archivo, destin)
 
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
-            # with open('C:\\Scripts\\Carga.sql', 'r+') as sql_file:
-            # if os.path.exists(destin):
-            #     print('Archivo Existente')
 
-            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', '../db/Carga_Temp.sql'])
+            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', TempCarga])
             conn.commit()
+
             print("Información extraida exitosamente")
             conn.close()
         except pyodbc.Error as error:
@@ -89,13 +90,20 @@ class ConexionDB:
     #     time.sleep(2)
 
     def CargarInformacion(self):
-        
+        Limpieza = '../db/SQL/Limpieza.sql'
+        Carga = '../db/SQL/Carga.sql'
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
+            
             #Se pondra la carga a las tablas con contenido corregido
-            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', '../db/Carga.sql'])
+            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', Limpieza])
             conn.commit()
+            print('Limpieza Realizada')
+
+            subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', Carga])
+            conn.commit()
+
             print("Información cargada exitosamente")
             conn.close()
         except pyodbc.Error as error:
@@ -140,7 +148,7 @@ class ConexionDB:
             
 
     def BorrarModelo(self):
-        delete_sql = '../db/Delete_Tables.sql'
+        delete_sql = '../db/SQL/Delete_Tables.sql'
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
@@ -157,7 +165,7 @@ class ConexionDB:
             conn.rollback()
 
     def CrearModelo(self):
-        path_sql = '../db/Create_Tables.sql'
+        path_sql = '../db/SQL/Create_Tables.sql'
         try:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
