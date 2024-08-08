@@ -84,3 +84,25 @@ WHERE ContinentName = '0'
    OR ContinentName LIKE '%,%'
    OR ContinentName LIKE '%,'
    OR ContinentName LIKE ',%';
+   
+SELECT ArrivalAirport, COUNT(*)
+from FlightTemp
+where LEN(ArrivalAirport) != 3
+group by ArrivalAirport 
+HAVING count(*) > 1;
+
+select COUNT(*)
+FROM FlightTemp
+WHERE (
+	UPPER(AirportName) LIKE '%AIR%' 
+	OR UPPER(AirportName) LIKE '%NAVAL%'
+	OR UPPER(AirportName)  LIKE '%DROM%'
+	OR UPPER(AirportName) LIKE '%FIELD%'
+	OR UPPER(AirportName) LIKE '%BASE%'
+	OR UPPER(AirportName) LIKE '%PLANE%'
+	OR UPPER(AirportName) LIKE '%AIRPORT%'
+	OR UPPER(AirportName)  LIKE '%PORT%'
+	OR UPPER(AirportName)  LIKE '%HELI%'
+	OR UPPER(AirportName)  LIKE '%AERO%'
+	OR UPPER(AirportName)  LIKE '%RAF%'
+);

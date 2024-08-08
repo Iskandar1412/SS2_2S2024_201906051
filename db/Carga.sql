@@ -24,6 +24,7 @@ SELECT * FROM FlightTemp;
 
 DELETE FROM Temporal WHERE ArrivalAirport = '0';
 DELETE FROM Temporal WHERE AirportName LIKE '-%';
+DELETE FROM Temporal WHERE LEN(ArrivalAirport) != 3;
 
 UPDATE Temporal
 SET Nationality = LEFT(Nationality, CHARINDEX(',', Nationality + ',') - 1)
@@ -35,13 +36,23 @@ WHERE CHARINDEX(',', CountryName) > 0;
 
 UPDATE Temporal
 SET AirportName = 
-    REPLACE(AirportName, SUBSTRING(AirportName, PATINDEX('%[^a-zA-Z0-9 ]%', AirportName), LEN(AirportName)), '')
-WHERE PATINDEX('%[^a-zA-Z0-9 ]%', AirportName) > 0;
-
+    REPLACE(AirportName, SUBSTRING(AirportName, PATINDEX('%[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9 ]%', AirportName), LEN(AirportName)), '')
+WHERE PATINDEX('%[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9 ]%', AirportName) > 0;
 
 DELETE FROM Temporal
-WHERE UPPER(AirportName) NOT LIKE '%AIR%' OR UPPER(AirportName) NOT LIKE '%AIRPORT%';
-
+WHERE NOT (
+	UPPER(AirportName) LIKE '%AIR%' 
+	OR UPPER(AirportName) LIKE '%NAVAL%'
+	OR UPPER(AirportName)  LIKE '%DROM%'
+	OR UPPER(AirportName) LIKE '%FIELD%'
+	OR UPPER(AirportName) LIKE '%BASE%'
+	OR UPPER(AirportName) LIKE '%PLANE%'
+	OR UPPER(AirportName) LIKE '%AIRPORT%'
+	OR UPPER(AirportName)  LIKE '%PORT%'
+	OR UPPER(AirportName)  LIKE '%HELI%'
+	OR UPPER(AirportName)  LIKE '%AERO%'
+	OR UPPER(AirportName)  LIKE '%RAF%'
+);
 
 INSERT INTO Passenger (PassengerID, FirstName, LastName, Gender, Age)
 SELECT DISTINCT PassengerID, FirstName, LastName, Gender, Age
