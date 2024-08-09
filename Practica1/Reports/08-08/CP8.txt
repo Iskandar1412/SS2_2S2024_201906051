@@ -1,0 +1,10 @@
+--- INIT Consulta 1
+
+ContinentName	TopContinentVisits
+North America	28488             
+Asia         	17026             
+Oceania      	13367             
+Africa       	10239             
+Europe       	8399              
+
+--- END Consulta 1
