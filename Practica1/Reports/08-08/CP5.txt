@@ -1,0 +1,10 @@
+--- INIT Consulta 1
+
+AirportName         	PassengerCount
+San Pedro Airport   	43            
+Santa Maria Airport 	38            
+Santa Ana Airport   	35            
+San Fernando Airport	31            
+Mae Hong Son Airport	29            
+
+--- END Consulta 1
