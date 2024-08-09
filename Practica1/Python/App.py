@@ -28,7 +28,7 @@ while seleccion != 6:
         
         conn.CargarInformacion()
     elif seleccion == "5":
-        print("Realizar Consultas")
+        conn.GeneracionConsulta()
     elif seleccion == "6":
         print("Saliendo del programa")
         print("Juan F. Urbina S. - 201906051")

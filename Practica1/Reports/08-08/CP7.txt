@@ -1,0 +1,10 @@
+--- INIT Consulta 1
+
+CountryName     	TopCountryVisits
+United States   	20463           
+Australia       	6293            
+Canada          	4504            
+Papua New Guinea	3998            
+China           	2603            
+
+--- END Consulta 1

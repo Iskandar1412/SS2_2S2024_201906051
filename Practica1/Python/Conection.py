@@ -2,14 +2,16 @@ import pyodbc
 import logging
 import subprocess
 import os
-import re
-import time
 import shutil
+import csv
+
+from Consults import Consultas
 
 # C:\Users\Pacos\Desktop\Proyectos\SS2_2S2024_201906051\Practica1\Pruebas\DataSet.csv
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+consult = Consultas()
 
 '''Para Docker (SQL Server Docker Image)'''
 # driver = 'ODBC Driver 17 for SQL Server'
@@ -181,5 +183,82 @@ class ConexionDB:
             print("Error: No se pudo crear el modelo. {}".format(error))
             conn.rollback()
 
-    def GenerarConceptos(self):
-        print("Generar conceptos")
+    def Consultas(self, consul, num, carpeta):
+        texto = carpeta + f'/CP{num}.txt'
+        with open(texto, 'w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file, delimiter='\t', quoting=csv.QUOTE_MINIMAL)
+            number = 1
+            for query in consul:
+                try:
+                    conn = pyodbc.connect(connection_string)
+                    cursor = conn.cursor()
+                    cursor.execute(query)
+                    rows = cursor.fetchall()
+                    columns = [desc[0] for desc in cursor.description]
+                    file.write(f'--- INIT Consulta {number}\n\n')
+                    
+                    # if columns[0] != '':
+                    #     file.write('\t\t\t'.join(columns) + '\n')
+                        
+                    # for row in rows:
+                    #     row_str = '\t\t\t'.join(str(value) for value in row)
+                    #     file.write(row_str + '\n')
+                    if columns[0] == '':
+                        columns[0] = 'Value'
+                    
+                    max_widths = [
+                        max(len(str(col)), max(len(str(row[i])) for row in rows))
+                        for i, col in enumerate(columns)
+                    ]
+
+                    formatted_headers = [col.ljust(width) for col, width in zip(columns, max_widths)]
+                    writer.writerow(formatted_headers)
+
+                    for row in rows:
+                        formatted_row = [str(value).ljust(width) for value, width in zip(row, max_widths)]
+                        writer.writerow(formatted_row)
+
+                
+                    conn.commit()
+                    file.write(f'\n--- END Consulta {number}\n')
+                    number += 1
+                    conn.close()
+                except pyodbc.Error as error:
+                    print("Error: No se pudo realizar la consulta. {}".format(error))
+                    conn.rollback()
+            print(f'Consulta {num} realizada correctamente')
+            file.close()
+
+    def GeneracionConsulta(self):
+        consult.setConexion(connection_string)
+        consult.CrearCarpeta()
+        carpeta = consult.carpetaday
+        con1 = consult.Consulta1()
+        self.Consultas(con1, 1, carpeta)
+        consult.Consulta2()
+        con1 = consult.Consulta2()
+        self.Consultas(con1, 2, carpeta)
+        consult.Consulta3()
+        con1 = consult.Consulta3()
+        self.Consultas(con1, 3, carpeta)
+        consult.Consulta4()
+        con1 = consult.Consulta4()
+        self.Consultas(con1, 4, carpeta)
+        consult.Consulta5()
+        con1 = consult.Consulta5()
+        self.Consultas(con1, 5, carpeta)
+        consult.Consulta6()
+        con1 = consult.Consulta6()
+        self.Consultas(con1, 6, carpeta)
+        consult.Consulta7()
+        con1 = consult.Consulta7()
+        self.Consultas(con1, 7, carpeta)
+        consult.Consulta8()
+        con1 = consult.Consulta8()
+        self.Consultas(con1, 8, carpeta)
+        consult.Consulta9()
+        con1 = consult.Consulta9()
+        self.Consultas(con1, 9, carpeta)
+        consult.Consulta10()
+        con1 = consult.Consulta10()
+        self.Consultas(con1, 10, carpeta)
