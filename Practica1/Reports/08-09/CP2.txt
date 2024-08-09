@@ -1,0 +1,7 @@
+--- INIT Consulta 1 - 2024-08-09 00:04:00
+
+Gender	PassengerCount	GenderPercentage
+Male  	42579         	50.220000000000 
+Female	42208         	49.780000000000 
+
+--- END Consulta 1

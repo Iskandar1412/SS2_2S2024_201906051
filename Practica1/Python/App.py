@@ -21,11 +21,6 @@ while seleccion != 6:
         ruta = input("Ingrese la ruta del archivo > ")
         conn.ExtraerInformacion(ruta)
     elif seleccion == "4":
-        # input_csv = 'C:\\CSV\\DataSet.csv'
-        # output_csv = 'C:\\CSV\\mod.csv'
-        
-        # conn.process_csv(input_csv, output_csv)
-        
         conn.CargarInformacion()
     elif seleccion == "5":
         conn.GeneracionConsulta()
