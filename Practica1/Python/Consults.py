@@ -27,7 +27,6 @@ class Consultas:
         now = datetime.now().strftime('%m-%d')
         route = f'../Reports/{now}'
         self.carpetaday = route
-        # print(route)
         try:
             os.makedirs(route)
             print(f'                                Carpeta "{route}" creada exitosamente')

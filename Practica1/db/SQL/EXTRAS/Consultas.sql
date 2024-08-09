@@ -58,9 +58,14 @@ ORDER BY PassengerCount DESC
 OFFSET 0 ROWS FETCH NEXT 5 ROWS ONLY;
 
 -- Caso 6: Count dividido por estado de vuelo
-SELECT FlightStatus, COUNT(*) AS FlightStateCount
-    FROM FlightDetails fd
-GROUP BY fd.FlightStatus;
+SELECT 
+    REPLACE(fd.FlightStatus, CHAR(13), '') AS FlightStatus, 
+    COUNT(*) AS PassengerCount
+FROM FlightDetails fd
+JOIN 
+    Passenger p ON fd.PassengerID = p.PassengerID
+GROUP BY REPLACE(fd.FlightStatus, CHAR(13), '')
+ORDER BY PassengerCount DESC;
 
 -- Caso 7: Top 5 Paises más visitados
 SELECT TOP 5

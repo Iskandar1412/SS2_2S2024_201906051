@@ -4,6 +4,7 @@ import subprocess
 import os
 import shutil
 import csv
+import datetime
 
 from Consults import Consultas
 
@@ -46,7 +47,6 @@ try:
     while row:
         print(row)
         row = cursor.fetchone()
-
 except pyodbc.Error as e:
     logger.error(f"Error connecting to the database: {e}")
 finally:
@@ -75,22 +75,6 @@ class ConexionDB:
             print("Error: No se pudo extraer la informacion {}".format(error))
             conn.rollback()
 
-    # def replace_commas(self, line):
-    #     line = re.sub(r',(?=(?:[^"]*"[^"]*")*[^"]*$)', '|', line)
-    #     # line = re.sub(r',', '.', line)
-    #     line = re.sub(r'\"', '', line)
-    #     # line = re.sub(r'\|', ',', line)
-    #     line = re.sub(r'\n+', '', line)
-    #     return line + '\n'
-
-    # def process_csv(self, input_file, output_file):
-    #     with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', newline='', encoding='utf-8') as outfile:
-
-    #         for line in infile:
-    #             modified_line = self.replace_commas(line)
-    #             outfile.write(modified_line)
-    #     time.sleep(2)
-
     def CargarInformacion(self):
         Limpieza = '../db/SQL/Limpieza.sql'
         Carga = '../db/SQL/Carga.sql'
@@ -98,7 +82,6 @@ class ConexionDB:
             conn = pyodbc.connect(connection_string)
             cursor = conn.cursor()
             
-            #Se pondra la carga a las tablas con contenido corregido
             subprocess.run(['sqlcmd', '-S', server, '-d', database, '-U', user, '-P', password, '-i', Limpieza])
             conn.commit()
             print('Limpieza Realizada')
@@ -111,44 +94,7 @@ class ConexionDB:
         except pyodbc.Error as error:
             print("Error al cargar informacion {}".format(error))
             conn.rollback()
-
-    # Carga por lotes
-    # def CargarInformacion(self):
-    #     path_csv = r'C:\Users\Pacos\Desktop\Proyectos\SS2_2S2024_201906051\Pruebas\DataSet.csv'
-    #     try:
-    #         batch_size = 10000
-    #         conn = pyodbc.connect(connection_string)
-    #         cursor = conn.cursor()
-    #         with open(path_csv, "r", encoding='utf-8') as archivo_csv:
-    #             lector_csv = csv.reader(archivo_csv)
-    #             next(lector_csv)  # Saltar la primera fila (encabezados)
-    #             batch = []
-    #             for fila in lector_csv:
-    #                 PassengerID, FirstName, LastName, Gender, Age, Nationality, AirportName, AirportCountryCode, CountryName, AirportContinent, ContinentName, DepartureDate, ArrivalAirport, PilotName, FlightStatus = fila
-    #                 batch.append((PassengerID, FirstName, LastName, Gender, Age, Nationality, AirportName, AirportCountryCode, CountryName, AirportContinent, ContinentName, DepartureDate, ArrivalAirport, PilotName, FlightStatus))
-    #                 if len(batch) >= batch_size:
-    #                     print(batch)
-    #                     cursor.executemany("""
-    #                         USE PRACTICA1;
-    #                         INSERT INTO FlightTemp (PassengerID, FirstName, LastName, Gender, Age, Nationality, AirportName, AirportCountryCode, CountryName, AirportContinent, ContinentName, DepartureDate, ArrivalAirport, PilotName, FlightStatus)
-    #                         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    #                     """, batch)
-    #                     conn.commit()
-    #                     batch = []
-    #             if batch:
-    #                 cursor.executemany("""
-                        
-    #                     INSERT INTO FlightTemp (PassengerID, FirstName, LastName, Gender, Age, Nationality, AirportName, AirportCountryCode, CountryName, AirportContinent, ContinentName, DepartureDate, ArrivalAirport, PilotName, FlightStatus)
-    #                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    #                 """, batch)
-    #                 conn.commit()
-    #         conn.close()
-    #         print("Información cargada exitosamente")
-    #     except pyodbc.Error as error:
-    #         print("Error: No se pudo cargar la informacion. {}".format(error))
-    #         conn.rollback()
-            
-
+       
     def BorrarModelo(self):
         delete_sql = '../db/SQL/Delete_Tables.sql'
         try:
@@ -157,7 +103,6 @@ class ConexionDB:
             with open(delete_sql, 'r') as file:
                 sql_script = file.read()
             
-            # print(sql_script)
             cursor.execute(sql_script)
             conn.commit()
             print("Modelo eliminado exitosamente")
@@ -174,7 +119,6 @@ class ConexionDB:
             with open(path_sql, 'r') as file:
                 sql_script = file.read()
             
-            # print(sql_script)
             cursor.execute(sql_script)
             conn.commit()
             print("Modelo creado exitosamente")
@@ -193,16 +137,11 @@ class ConexionDB:
                     conn = pyodbc.connect(connection_string)
                     cursor = conn.cursor()
                     cursor.execute(query)
+                    ahora = datetime.datetime.now()
                     rows = cursor.fetchall()
                     columns = [desc[0] for desc in cursor.description]
-                    file.write(f'--- INIT Consulta {number}\n\n')
+                    file.write(f'--- INIT Consulta {number} - {ahora.strftime("%Y-%m-%d %H:%M:%S")}\n\n')
                     
-                    # if columns[0] != '':
-                    #     file.write('\t\t\t'.join(columns) + '\n')
-                        
-                    # for row in rows:
-                    #     row_str = '\t\t\t'.join(str(value) for value in row)
-                    #     file.write(row_str + '\n')
                     if columns[0] == '':
                         columns[0] = 'Value'
                     
@@ -218,7 +157,6 @@ class ConexionDB:
                         formatted_row = [str(value).ljust(width) for value, width in zip(row, max_widths)]
                         writer.writerow(formatted_row)
 
-                
                     conn.commit()
                     file.write(f'\n--- END Consulta {number}\n')
                     number += 1
