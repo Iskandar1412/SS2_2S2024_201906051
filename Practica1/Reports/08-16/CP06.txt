@@ -1,0 +1,8 @@
+--- INIT Consulta 1 - 2024-08-16 20:31:49
+
+FlightStatus	PassengerCount
+Cancelled   	28337         
+Delayed     	28240         
+On Time     	28210         
+
+--- END Consulta 1
