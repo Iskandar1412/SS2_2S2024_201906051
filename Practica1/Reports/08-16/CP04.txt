@@ -1,0 +1,228 @@
+--- INIT Consulta 1 - 2024-08-16 20:31:49
+
+CountryName                         	NumberOfFlights
+United States                       	20463          
+Australia                           	6293           
+Canada                              	4504           
+Papua New Guinea                    	3998           
+China                               	2603           
+Brazil                              	2305           
+Indonesia                           	2082           
+Russian Federation                  	2043           
+India                               	1475           
+Colombia                            	1300           
+United Kingdom                      	1276           
+Argentina                           	1019           
+Japan                               	955            
+Congo                               	930            
+South Africa                        	890            
+Iran                                	790            
+Mexico                              	732            
+Philippines                         	709            
+Pakistan                            	684            
+Malaysia                            	660            
+Madagascar                          	655            
+Germany                             	610            
+Venezuela                           	574            
+New Zealand                         	547            
+Ethiopia                            	544            
+French Polynesia                    	506            
+Thailand                            	494            
+Greece                              	488            
+Myanmar                             	454            
+Spain                               	445            
+Nepal                               	441            
+Angola                              	437            
+Italy                               	435            
+Peru                                	425            
+Chile                               	406            
+Kenya                               	395            
+Algeria                             	375            
+Ukraine                             	365            
+Korea                               	363            
+Mozambique                          	360            
+Marshall Islands                    	353            
+Bahamas                             	351            
+Afghanistan                         	349            
+Solomon Islands                     	349            
+Tanzania                            	345            
+Turkey                              	342            
+Greenland                           	337            
+Saudi Arabia                        	334            
+Norway                              	324            
+Panama                              	323            
+Sri Lanka                           	322            
+Viet Nam                            	314            
+Cuba                                	304            
+Egypt                               	299            
+Sweden                              	299            
+Vanuatu                             	299            
+Gabon                               	297            
+Costa Rica                          	297            
+Finland                             	284            
+Nigeria                             	278            
+Guyana                              	277            
+Fiji                                	277            
+France                              	268            
+Bolivia                             	264            
+Sudan                               	264            
+Honduras                            	255            
+Kazakhstan                          	254            
+Kiribati                            	252            
+Burkina Faso                        	250            
+Ecuador                             	249            
+Morocco                             	230            
+Somalia                             	226            
+Mongolia                            	225            
+Zambia                              	222            
+Libya                               	221            
+C+¦te d'Ivoire                      	214            
+Guatemala                           	211            
+Taiwan                              	209            
+Belize                              	205            
+Chad                                	198            
+Central African Republic            	196            
+Portugal                            	194            
+Oman                                	193            
+Ireland                             	193            
+Cameroon                            	177            
+Botswana                            	174            
+Lao People's Democratic Republic    	171            
+Bangladesh                          	166            
+Netherlands                         	162            
+Liberia                             	160            
+Denmark                             	160            
+Lesotho                             	156            
+Uganda                              	154            
+Mauritania                          	153            
+United Arab Emirates                	151            
+Yemen                               	148            
+Suriname                            	147            
+Senegal                             	141            
+Zimbabwe                            	138            
+Puerto Rico                         	134            
+Paraguay                            	132            
+Switzerland                         	132            
+Israel                              	129            
+Uzbekistan                          	128            
+Uruguay                             	124            
+Cambodia                            	124            
+Iraq                                	123            
+Mali                                	122            
+Malawi                              	122            
+Maldives                            	118            
+Bulgaria                            	110            
+Dominican Republic                  	104            
+Guinea                              	99             
+Iceland                             	98             
+Nicaragua                           	98             
+Cook Islands                        	98             
+Poland                              	94             
+Croatia                             	89             
+Azerbaijan                          	87             
+Sierra Leone                        	84             
+Jamaica                             	83             
+Romania                             	81             
+Tunisia                             	79             
+New Caledonia                       	79             
+Cabo Verde                          	75             
+Austria                             	72             
+Timor-Leste                         	69             
+Turks and Caicos Islands            	68             
+Belarus                             	67             
+Czechia                             	65             
+Micronesia                          	64             
+Virgin Islands                      	61             
+Niger                               	60             
+Syrian Arab Republic                	58             
+Cyprus                              	54             
+Rwanda                              	50             
+Seychelles                          	50             
+South Sudan                         	48             
+Eritrea                             	48             
+Haiti                               	48             
+Bosnia and Herzegovina              	47             
+Benin                               	46             
+Bhutan                              	46             
+American Samoa                      	45             
+Singapore                           	44             
+Serbia                              	43             
+Northern Mariana Islands            	43             
+Tajikistan                          	43             
+Turkmenistan                        	42             
+Belgium                             	41             
+Ghana                               	41             
+Burundi                             	39             
+Qatar                               	39             
+Equatorial Guinea                   	38             
+Georgia                             	35             
+Estonia                             	34             
+Comoros                             	34             
+Saint Vincent and the Grenadines    	34             
+Jordan                              	33             
+Montenegro                          	33             
+Western Sahara                      	32             
+Palestine                           	31             
+Tonga                               	30             
+Lithuania                           	30             
+Hungary                             	28             
+Samoa                               	28             
+United States Minor Outlying Islands	27             
+Cayman Islands                      	27             
+Falkland Islands (Malvinas)         	27             
+Kyrgyzstan                          	26             
+Latvia                              	25             
+Lebanon                             	25             
+Saint Pierre and Miquelon           	25             
+Mauritius                           	24             
+Djibouti                            	24             
+Grenada                             	23             
+Kuwait                              	23             
+Armenia                             	21             
+Sao Tome and Principe               	20             
+R+®union                            	20             
+Slovenia                            	20             
+Dominica                            	19             
+French Guiana                       	19             
+North Macedonia                     	19             
+Guadeloupe                          	18             
+Wallis and Futuna                   	17             
+Tuvalu                              	16             
+Guernsey                            	16             
+Malta                               	16             
+British Indian Ocean Territory      	16             
+Gambia                              	15             
+Niue                                	15             
+Macao                               	14             
+Anguilla                            	14             
+Barbados                            	13             
+Mayotte                             	13             
+Hong Kong                           	12             
+Isle of Man                         	12             
+Bahrain                             	12             
+Albania                             	12             
+Saint Martin (French part)          	12             
+Saint Barth+®lemy                   	11             
+Faroe Islands                       	11             
+Christmas Island                    	11             
+Bonaire                             	10             
+Guinea-Bissau                       	10             
+Norfolk Island                      	10             
+Togo                                	10             
+Trinidad and Tobago                 	9              
+Saint Helena                        	9              
+Sint Maarten (Dutch part)           	9              
+Gibraltar                           	9              
+Guam                                	9              
+Aruba                               	9              
+Eswatini                            	9              
+Brunei Darussalam                   	8              
+Antigua and Barbuda                 	7              
+Andorra                             	7              
+Monaco                              	7              
+Nauru                               	7              
+Saint Lucia                         	7              
+Palau                               	5              
+Jersey                              	4              
+
+--- END Consulta 1

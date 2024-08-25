@@ -1,0 +1,15 @@
+--- INIT Consulta 1 - 2024-08-16 20:31:49
+
+Gender	Age	TravelCount
+Female	39 	537        
+Female	58 	507        
+Female	6  	505        
+Female	27 	504        
+Female	29 	502        
+Male  	89 	528        
+Male  	29 	517        
+Male  	46 	512        
+Male  	15 	508        
+Male  	42 	507        
+
+--- END Consulta 1
