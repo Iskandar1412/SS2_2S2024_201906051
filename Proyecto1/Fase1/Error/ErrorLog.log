@@ -1,12 +1,4 @@
-Error Message: Invalid column name 'CodigoCliente'.
-Invalid column name 'NombreCliente'.
-Invalid column name 'TipoCliente'.
-Invalid column name 'DireccionCliente'.
-Invalid column name 'NumeroCliente'.
-Invalid column name 'CodVendedor'.
-Invalid column name 'NombreVendedor'.
-Invalid column name 'Vacacionista'.
-Invalid column name 'PrecioUnitario'.
+Error Message: Invalid column name 'SodSucursal'.
 Stack Trace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
    en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
