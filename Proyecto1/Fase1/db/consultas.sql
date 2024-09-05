@@ -45,3 +45,16 @@ SELECT
     (SELECT COUNT(*) FROM Proveedor) AS Totales_Proveedor,
     (SELECT COUNT(*) FROM Cliente) AS Totales_Cliente,
     (SELECT COUNT(*) FROM Vendedor) AS Totales_Vendedor;
+
+SELECT COUNT(*) FROM Compras AS Totales_Compras;
+SELECT COUNT(*) FROM Ventas AS Totales_Ventas;
+SELECT COUNT(*) FROM Sucursal AS Totales_Sucursal;
+SELECT COUNT(*) FROM Producto AS Totales_Producto;
+SELECT COUNT(*) FROM Region AS Totales_Region;
+SELECT COUNT(*) FROM Departamento AS Totales_Departamento;
+SELECT COUNT(*) FROM Marca AS Totales_Marca;
+SELECT COUNT(*) FROM Categoria AS Totales_Categoria;
+SELECT COUNT(*) FROM Fecha AS Totales_Fecha;
+SELECT COUNT(*) FROM Proveedor AS Totales_Proveedor;
+SELECT COUNT(*) FROM Cliente AS Totales_Cliente;
+SELECT COUNT(*) FROM Vendedor AS Totales_Vendedor;
