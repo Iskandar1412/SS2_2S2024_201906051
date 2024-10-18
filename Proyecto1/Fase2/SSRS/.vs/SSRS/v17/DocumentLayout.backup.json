@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{094341F5-A345-4E34-8276-B21A57862256}|SS2_Proyecto_F2_RS\\SSRS.rptproj|solutionrelative:SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cab27b98-a314-48d2-9746-efe8ba39ccb0}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Venta_Reporte3.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Venta_Reporte3.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:47.333Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Venta_Reporte1.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Venta_Reporte1.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:43.624Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Compra_Reporte3.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Compra_Reporte3.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:41.891Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Compra_Reporte2.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Compra_Reporte2.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:39.378Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Compra_Reporte1.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Compra_Reporte1.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:36.744Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venta_Reporte2.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl",
+              "RelativeDocumentMoniker": "SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\SSRS\\SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "SS2_Proyecto_F2_RS\\Venta_Reporte2.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T19:54:45.467Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

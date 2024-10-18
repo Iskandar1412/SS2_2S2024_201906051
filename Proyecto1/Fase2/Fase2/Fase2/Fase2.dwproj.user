@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>DWH Seminario2 201906051</Id>
+            <Name>DWH Seminario2 201906051</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA478moRXVHUenxaTM1S1S2wAAAAAyAAAARABXAEgAIABTAGUAbQBpAG4AYQByAGkAbwAyACAAMgAwADEAOQAwADYAMAA1ADEAAAAQZgAAAAEAACAAAACJ/x7MY4C1NJelq+5K0Kvwu9Ygspv+3S0Tkobt3r/nAgAAAAAOgAAAAAIAACAAAADYl1gx6NCezjRRiQ60ORqne5/Xs4rr91lV59YNZkqG0hAAAABffIUNN3i9/N40DYCfE3j7QAAAAE/wIIvgyHytW8FlDcpm9Q/qOklxRIBcRV3uthvGHd7GiclSi0hIuzOvUTV6H2LNgOJOAxPsHiP5lxj47C7kz0Q=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>DWH Seminario2 201906051</Id>
+            <Name>DWH Seminario2 201906051</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA478moRXVHUenxaTM1S1S2wAAAAAyAAAARABXAEgAIABTAGUAbQBpAG4AYQByAGkAbwAyACAAMgAwADEAOQAwADYAMAA1ADEAAAAQZgAAAAEAACAAAABveNH/eN988a45rEAD3mRTaBSvAfipoAgnZYx9SWuJhAAAAAAOgAAAAAIAACAAAAChdDdMNJxR8BdmaJnLYY29HFCDF23eWv2kzMqqNgQuQSAAAABNrLAbJ7rain51kJgegks3OylS1iJrQsY0hHl6TJ7Qj0AAAACSJB6y0p+rAtOEufcDzVixjQ0yQeA+97NlI9h/au4TPsZ90+GI1drRGWZ++8Lbrgp2nZBR9ceVRSsrJLcqn4f/</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>ISKANDAR\DEVELOPER</TargetServer>
+        <TargetDatabase>Analysis</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

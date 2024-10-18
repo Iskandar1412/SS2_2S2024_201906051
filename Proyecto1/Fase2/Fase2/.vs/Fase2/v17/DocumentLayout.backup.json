@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Compras.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|solutionrelative:Fase2\\Compras.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Ventas.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|solutionrelative:Fase2\\Ventas.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|solutionrelative:Fase2\\DWH.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH Seminario2 201906051.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8B44F6CD-63A8-4E64-A4BE-9D4B7D5F13A7}|Fase2\\Fase2.dwproj|solutionrelative:Fase2\\DWH Seminario2 201906051.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ventas.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Ventas.cube",
+              "RelativeDocumentMoniker": "Fase2\\Ventas.cube",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Ventas.cube [Dise\u00F1o]",
+              "RelativeToolTip": "Fase2\\Ventas.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T17:42:10.192Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Compras.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Compras.cube",
+              "RelativeDocumentMoniker": "Fase2\\Compras.cube",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\Compras.cube [Dise\u00F1o]",
+              "RelativeToolTip": "Fase2\\Compras.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T17:41:19.132Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DWH.dsv [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH.dsv",
+              "RelativeDocumentMoniker": "Fase2\\DWH.dsv",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH.dsv [Dise\u00F1o]",
+              "RelativeToolTip": "Fase2\\DWH.dsv [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T17:38:03.863Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DWH Seminario2 201906051.dsv [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH Seminario2 201906051.dsv",
+              "RelativeDocumentMoniker": "Fase2\\DWH Seminario2 201906051.dsv",
+              "ToolTip": "C:\\Users\\Pacos\\Desktop\\Proyectos\\SS2_2S2024_201906051\\Proyecto1\\Fase2\\Fase2\\Fase2\\DWH Seminario2 201906051.dsv [Dise\u00F1o]",
+              "RelativeToolTip": "Fase2\\DWH Seminario2 201906051.dsv [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-18T16:21:11.761Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

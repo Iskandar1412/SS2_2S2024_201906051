@@ -100,3 +100,36 @@ CREATE TABLE Ventas(
 	FOREIGN KEY (producto_key) REFERENCES Producto(producto_key),
 	FOREIGN KEY (sucursal_key) REFERENCES Sucursal(sucursal_key)
 );
+
+ALTER TABLE Compras
+	ADD TotalCosto AS (Unidades * CostoU) PERSISTED
+;
+
+ALTER TABLE Ventas
+	ADD TotalPrecio AS (Unidades * PrecioUnitario) PERSISTED
+;
+
+ALTER TABLE Fecha
+	ADD Semestre AS (CASE 
+		WHEN Month BETWEEN 1 AND 6 THEN 1
+		WHEN Month BETWEEN 7 AND 12 THEN 2
+	END) PERSISTED
+;
+
+ALTER TABLE Producto
+ADD Categoria VARCHAR(100);
+
+ALTER TABLE Producto
+ADD MarcaProducto VARCHAR(100);
+
+UPDATE Producto 
+	SET Producto.Categoria = (SELECT Categoria.Categoria 
+		FROM Categoria 
+	WHERE Categoria.categoria_key = Producto.categoria_key)
+;
+
+UPDATE Producto 
+	SET Producto.MarcaProducto = (SELECT Marca.MarcaProducto 
+		FROM Marca 
+	WHERE Marca.marca_key = Producto.marca_key)
+;
